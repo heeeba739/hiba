@@ -238,5 +238,18 @@ Créer un tableau de bord interactif de 4 pages, permettant de visualiser les KP
 | Région | Comparaison par continents et sous-régions | Histogrammes, cartes choroplèthes, KPI résumés par région |
 | Pays | Fiche pays détaillée | Tableaux et cartes par pays, évolution du PIB, CO₂, population |
 | Corrélation & Durabilité | Analyse de l’impact économique vs environnemental | Graphiques de dispersion PIB vs CO₂, ratio CO₂/PIB, tendances par région |
+
+## Correlation
+
+<img width="1042" height="576" alt="image" src="https://github.com/user-attachments/assets/90346ed3-ea83-4b0f-aa32-f34652ad06c9" />
+
+## Region
+
+
+<img width="1032" height="580" alt="image" src="https://github.com/user-attachments/assets/22f26809-bf3c-43c9-b603-f695242eaa70" />
+
+
+
+
  
 
