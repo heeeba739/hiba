@@ -4,9 +4,9 @@
 ## Presentation d'quipe 
 1_Leila Mourid
 
-2_Chaimaa Maache 
+2_Chaimaa Maach
 
-3_Ayoub 
+3_Ayoub El harem
 
 4_Hiba Azizi
 
