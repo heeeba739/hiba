@@ -1,7 +1,7 @@
 
-#  Global Development Dashboard — World Progress 2030
+# ✔ Global Development Dashboard — World Progress 2030
 
-##👥 Presentation d'quipe 
+## Presentation d'quipe 
 1_Leila Mourid
 
 2_Chaimaa Maache 
@@ -10,13 +10,13 @@
 
 4_Hiba Azizi
 
-#Repartition des taches:
+# ✔Repartition des taches:
 <img width="1354" height="571" alt="image" src="https://github.com/user-attachments/assets/34552e4d-33ef-4720-b8f6-8b5ab07b4116" />
 
 
 ---
 
-## 1.  Contexte du Projet
+## ✔  Contexte du Projet
 GDW pilote le programme **“World Progress 2030”** pour suivre le développement économique et environnemental mondial à partir de données ouvertes.
 
 **Problème à résoudre :**  
@@ -24,13 +24,13 @@ GDW pilote le programme **“World Progress 2030”** pour suivre le développem
 - Détecter les **risques écologiques**  
 - Orienter les **priorités de financement**  
 
-**Objectif :**  
+** ✔ Objectif :**  
 Créer un **tableau de bord Power BI** permettant de visualiser PIB, population et émissions de CO₂ par pays, avec des **KPIs pertinents** et un **storytelling clair**.
 
 
 ---
 
-## 2.  Objectifs du projet
+## ✔  Objectifs du projet
 - Automatiser l’extraction des données depuis **deux APIs REST**  
 - Nettoyer, croiser et modéliser des jeux de données hétérogènes  
 - Créer un **modèle de données cohérent** entre indicateurs économiques et géographiques  
@@ -39,16 +39,16 @@ Créer un **tableau de bord Power BI** permettant de visualiser PIB, population 
 - Collaborer efficacement au sein d’une équipe de 4, avec documentation continue  
 
 ---
-##  Étapes dans Power BI (Power Query)
+## ✔ Étapes dans Power BI (Power Query)
 
-1. **Importer l’API REST Countries**  
+1. ** ✔ Importer l’API REST Countries**  
    - Power BI Desktop → `Transform Data`  
    - `Home → Get Data → Web`  
    - Coller l’URL : `https://restcountries.com/v3.1/all`  
    - Sélectionner **JSON** → Convertir en table → Dérouler les colonnes nécessaires  
    - Vérifier les types de colonnes (texte, nombre, booléen)  
 
-2. **Importer l’API World Bank**  
+2. ** ✔ Importer l’API World Bank**  
    - Power BI Desktop → `Transform Data → Get Data → Web`  
    - URL exemple pour PIB : `https://api.worldbank.org/v2/country/all/indicator/NY.GDP.MKTP.CD?date=2015:2022&format=json`  
    - Convertir JSON en table → Dérouler colonnes → Filtrer années 2015-2022  
@@ -56,7 +56,7 @@ Créer un **tableau de bord Power BI** permettant de visualiser PIB, population 
   
 ---
 
-##  Champs identifiés pour le projet
+## ✔ Champs identifiés pour le projet
 
 | Table | Champ | Type | Description |
 |-------|-------|------|------------|
@@ -74,7 +74,7 @@ Créer un **tableau de bord Power BI** permettant de visualiser PIB, population 
 
 
 ----
-##  Observations initiales
+## ✔ Observations initiales
 
 - Tous les pays n’ont pas forcément toutes les années disponibles.  
 - Certaines valeurs sont nulles ou manquantes → seront traitées à l’étape 2.  
@@ -82,7 +82,7 @@ Créer un **tableau de bord Power BI** permettant de visualiser PIB, population 
 - Types de données ajustés pour correspondre entre les tables.
 
 ----
-##  Prochaines étapes
+## ✔ Prochaines étapes
 
 1. Nettoyage des données et gestion des valeurs nulles (Power Query).  
 2. Création des colonnes calculées utiles (région simplifiée, population classée, ratio CO₂/PIB…).  
@@ -90,7 +90,7 @@ Créer un **tableau de bord Power BI** permettant de visualiser PIB, population 
 
 ----
 
-##  Tableau des transformations
+## ✔ Tableau des transformations
 
 | Étape / Colonne | Anomalie détectée | Correction appliquée | Explication / justification métier |
 |-----------------|-----------------|--------------------|----------------------------------|
@@ -104,7 +104,7 @@ Créer un **tableau de bord Power BI** permettant de visualiser PIB, population 
 | Pivot des indicateurs | Indicateurs sous forme verticale | Pivot des colonnes sur `Indicator ID` | Transforme la table en format “wide” adapté pour Power BI et calcul des KPI |
 | Colonnes finales | Structure finale | Colonnes : `ISO3Code`, `Year`, `Country Name`, `PIB`, `Population`, `CO2` | Table prête pour analyses et création de mesures DAX dans Power BI |
 --------------------------------
-##  Notes générales
+## ✔ Notes générales
 
 - **Fusion avec tables de référence** : `country`, `pib_remplacer`, `CO2_remplacer` pour compléter les valeurs manquantes.  
 - **Suppression des lignes inutiles** : null ou vides (`ISO3Code`, `Value`) pour garantir la qualité de la table.  
@@ -112,14 +112,14 @@ Créer un **tableau de bord Power BI** permettant de visualiser PIB, population 
 - **Triage des colonnes** : seules les colonnes essentielles sont conservées, le reste est supprimé pour simplifier la table finale.
 
 ---
-# 📝 Étape 2 – Transformation des données
+# ✔ Étape 2 – Transformation des données
 
-## Objectif
+## ✔ Objectif
 Assurer la qualité et la cohérence des données extraites, gérer les valeurs manquantes, créer des colonnes calculées utiles et préparer la fusion avec les données contextuelles.
 
 ---
 
-##  Tableau des transformations
+## ✔ Tableau des transformations
 
 | Étape / Colonne | Anomalie détectée | Correction appliquée | Explication / justification métier |
 |-----------------|-----------------|--------------------|----------------------------------|
@@ -132,7 +132,7 @@ Assurer la qualité et la cohérence des données extraites, gérer les valeurs 
 
 ---
 
-# Notes générales
+## ✔ Notes générales
 
 - Toutes les transformations ont été réalisées dans **Power Query**.  
 - Les colonnes temporaires utilisées pour le remplacement de valeurs nulles ont été supprimées après usage.  
@@ -140,7 +140,7 @@ Assurer la qualité et la cohérence des données extraites, gérer les valeurs 
 
 ---
 
-##  Journal de bord
+## ✔ Journal de bord
 
  | Action  | Commentaire |
 |--------|------------|
@@ -151,14 +151,14 @@ Assurer la qualité et la cohérence des données extraites, gérer les valeurs 
 
 ---
 
-# 📝 Étape 3 – Modélisation des données
+# ✔ Étape 3 – Modélisation des données
 
-## Objectif
+## ✔ Objectif
 Construire un modèle en étoile cohérent pour Power BI, avec tables de faits et de dimensions, afin de faciliter les calculs DAX et la création du tableau de bord.
 
 ---
 
-##  Structure du modèle
+## ✔ Structure du modèle
 
 | Table | Type | Clé principale | Clés secondaires / Relations |
 |-------|------|----------------|----------------------------|
@@ -169,7 +169,7 @@ Construire un modèle en étoile cohérent pour Power BI, avec tables de faits e
 
 ---
 
-##  Notes générales
+## ✔ Notes générales
 
 - Le modèle suit une **structure en étoile**, idéale pour Power BI et DAX.  
 - Les cardinalités ont été vérifiées : **un-à-plusieurs** entre dimensions et table de faits.  
@@ -177,7 +177,7 @@ Construire un modèle en étoile cohérent pour Power BI, avec tables de faits e
 
 ---
 
-##  Journal de bord
+## ✔ Journal de bord
 
  | Action  | Commentaire |
  |--------|------------|
@@ -186,19 +186,19 @@ Construire un modèle en étoile cohérent pour Power BI, avec tables de faits e
  | Création table DimRégion  | Facilite le filtrage et comparaisons régionales |
  | Définition des relations  | Vérification des cardinalités et cohérence du modèle |
 
-## les relations entre la table fait et les tables de dimentions
+##  ✔ les relations entre la table fait et les tables de dimentions
 
 <img width="762" height="499" alt="image" src="https://github.com/user-attachments/assets/8eeaa8bd-67e2-4747-b615-a03443e8275e" />
 
 -----------
-# 📝 Étape 4 – Création des mesures (DAX)
+# ✔ Étape 4 – Création des mesures (DAX)
 
-## Objectif
+## ✔ Objectif
 Traduire les formules mathématiques des KPI en mesures DAX dans Power BI, en vérifiant la cohérence des unités et des formats.
 
 ---
 
-##  Tableau des mesures DAX
+## ✔ Tableau des mesures DAX
 
 | Thème | KPI | Description |
 |-------|-----|-------------|
@@ -223,14 +223,14 @@ Traduire les formules mathématiques des KPI en mesures DAX dans Power BI, en v�
 
 
 
-# 📝 Étape 5 – Construction du tableau de bord Power BI
+# ✔ Étape 5 – Construction du tableau de bord Power BI
 
-## Objectif
+## ✔ Objectif
 Créer un tableau de bord interactif de 4 pages, permettant de visualiser les KPI et d’explorer les données selon différents segments.
 
 ---
 
-##  Pages de visualisation
+## ✔ Pages de visualisation
 
 | Page | Objectif | Visualisations clés |
 |------|----------|-------------------|
@@ -239,16 +239,20 @@ Créer un tableau de bord interactif de 4 pages, permettant de visualiser les KP
 | Pays | Fiche pays détaillée | Tableaux et cartes par pays, évolution du PIB, CO₂, population |
 | Corrélation & Durabilité | Analyse de l’impact économique vs environnemental | Graphiques de dispersion PIB vs CO₂, ratio CO₂/PIB, tendances par région |
 
-## Correlation
+## ✔ Correlation
 
 <img width="1042" height="576" alt="image" src="https://github.com/user-attachments/assets/90346ed3-ea83-4b0f-aa32-f34652ad06c9" />
 
-## Region
+## ✔ Region
 
 
 <img width="1032" height="580" alt="image" src="https://github.com/user-attachments/assets/22f26809-bf3c-43c9-b603-f695242eaa70" />
 
+## Mondiale
 
+
+
+## Pays 
 
 
  
