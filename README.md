@@ -248,12 +248,15 @@ Créer un tableau de bord interactif de 4 pages, permettant de visualiser les KP
 
 <img width="1032" height="580" alt="image" src="https://github.com/user-attachments/assets/22f26809-bf3c-43c9-b603-f695242eaa70" />
 
-## Mondiale
+##  ✔ Mondiale
+
+<img width="1054" height="577" alt="image" src="https://github.com/user-attachments/assets/64cab3c1-6056-46bd-b359-97b7fe59fecd" />
 
 
+##  ✔ Pays 
 
-## Pays 
 
+<img width="1029" height="573" alt="image" src="https://github.com/user-attachments/assets/661ad772-04a0-4b26-a95c-0d033a760ae8" />
 
  
 
