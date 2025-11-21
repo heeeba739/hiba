@@ -258,5 +258,114 @@ Créer un tableau de bord interactif de 4 pages, permettant de visualiser les KP
 
 <img width="1029" height="573" alt="image" src="https://github.com/user-attachments/assets/661ad772-04a0-4b26-a95c-0d033a760ae8" />
 
+#### ✅ Analyse & interprétation (à partir du screen)
+## Quel pays a connu la plus forte croissance depuis 2015 ?
+
+Dans le scatter plot “Somme de PIB, Somme de CO₂ et Somme de Population par Country Name et Year” :
+
+On voit que certains pays (comme un point vert en haut à droite) ont un PIB nettement plus élevé en 2022 que les autres.
+
+Ces points élevés indiquent une croissance économique forte et soutenue.
+
+## Interprétation :
+Les pays affichant des points situés tout à droite (gros PIB) et plus hauts (plus d’émissions) sont ceux dont la croissance depuis 2015 est la plus importante.
+
+## Le pays en haut à droite (probablement une grande économie) est celui avec la croissance la plus forte.
+
+## Quelle région a amélioré le plus son ratio PIB/CO₂ ?
+
+Dans le Treemap “Ratio PIB_CO2 par Country Name”, on remarque :
+
+Certaines régions ont des pays avec des rectangles très grands → ratio PIB/CO₂ élevé
+
+Ce ratio mesure l’efficacité carbone (combien de PIB on produit pour 1 tonne de CO₂).
+
+## Interprétation :
+Les pays affichés en grands blocs colorés dans le Treemap appartiennent aux régions qui :
+✔ produisent beaucoup de PIB
+✔ pour peu d’émissions
+
+## Les régions contenant "Virgin Islands", "Guam", "American …", "Faroe Islands" semblent afficher des ratios excellents, donc une amélioration supérieure.
+
+## Quels pays combinent forte croissance et faible pollution ?
+
+D’après les graphes :
+
+Un pays ayant fort PIB (à droite)
+
+Et faible CO₂_Total (en bas sur les scatter plots)
+
+## Ce sont les pays situés :
+## À droite mais en bas dans les scatter plots (ex. "Population_Totale et CO₂_Total").
+
+Ces pays ont donc :
+✔ fort PIB → croissance
+✔ faibles émissions → efficacité environnementale
+
+## Les petits pays performants dans le Treemap sont de bons candidats (Faroe Islands, Guam…).
+
+## Quelles corrélations apparaissent entre PIB, population et CO₂ ?
+
+Les indicateurs dans tes cartes montrent :
+
+## Corrélation PIB ↔ CO₂ : 0,819
+
+## Forte corrélation positive
+→ plus un pays produit du PIB, plus il émet du CO₂.
+
+## Corrélation CO₂ ↔ Population : 0,807
+
+## Très forte corrélation
+→ plus la population est grande, plus les émissions sont importantes.
+
+## Corr_CO2_Surface : 0,5…
+
+## Corrélation modérée
+→ la superficie a un impact mais pas majeur.
+
+## Conclusion :
+
+PIB ↑ = CO₂ ↑
+
+Population ↑ = CO₂ ↑
+
+Surface ↑ = CO₂ ↑ (modérément)
+
+## Quels enseignements stratégiques pour GDW ?
+
+En s’appuyant sur les KPI visibles dans le dashboard :
+
+1. Les grands pays à forte croissance sont aussi les plus polluants
+
+→ GDW peut cibler ces marchés pour proposer
+✔ Énergies propres
+✔ Solutions de réduction CO₂
+✔ Innovation verte
+
+2. Certains petits pays sont très performants
+
+→ Leur ratio PIB/CO₂ est excellent
+→ Ils peuvent servir d’exemple pour des politiques environnementales.
+
+3. Les régions ne sont pas égales
+
+→ Certaines régions montrent une amélioration significative du ratio PIB/CO₂
+→ GDW peut analyser ce qui marche (efficacité énergétique, fiscalité, innovation).
+
+4. Forte corrélation Population–CO₂
+
+→ Dans les pays très peuplés :
+✔ priorité aux transports propres
+✔ meilleure gestion énergétique
+✔ optimisation industrielle
+
+5. Forte corrélation PIB–CO₂
+
+→ La croissance économique reste dépendante des émissions.
+→ GDW peut proposer :
+✔ Mix énergétique propre
+✔ Transition vers une économie bas carbone
+✔ Technologies vertes rentables
+
  
 
